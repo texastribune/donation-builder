@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title %> | The Texas Tribune</title>
+    <title><%= current_page.data.title %> | <%= data.AboutOrg[0]['org_name'] %></title>
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
 
     <meta property="og:url" content="<%= data.Social[0]['fb_url'] %>">
@@ -18,14 +18,8 @@
     <meta property="og:title" content="<%= data.Social[0]['title'] %>">
     <meta property="og:type" content="website">
     <meta property="og:description" content="<%= data.Social[0]['fb_content'] %>">
-    <!-- Apple icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://s3.amazonaws.com/static.texastribune.org/media/icons/iPhone_Icon_60x60.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://s3.amazonaws.com/static.texastribune.org/media/icons/iPad_Icon_76x76.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://s3.amazonaws.com/static.texastribune.org/media/icons/iPhone_Icon_120x120.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://s3.amazonaws.com/static.texastribune.org/media/icons/iPad_Icon_152x152.png"/>
     <%= stylesheet_link_tag "all" %>
-    <script src="//use.typekit.net/ngv2xmw.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <%= javascript_include_tag  "all" %>
