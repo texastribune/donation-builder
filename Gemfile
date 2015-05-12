@@ -2,11 +2,13 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "middleman", "~>3.3.5"
+gem "middleman"
 
 gem "middleman-bourbon"
 
 gem "neat"
+
+gem 'middleman-google_drive'
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
