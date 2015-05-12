@@ -5,40 +5,21 @@ title: Circle Membership
 <div class="splash">
   <div class="splash-wrapper">
     <div class="splash-greeting">
-      <h1 class="splash-header">Join Our Circle</h1>
+      <h1 class="splash-header"><%= data.AboutOrg[0]['premium_page_title'] %></h1>
       <p class="splash-info"><%= data.AboutOrg[0]['summary'] %></p>
       <h4 class="splash-support"><%= data.AboutOrg[0]['cta'] %></h4>
     </div><!-- splash-greeting -->
-    <% data.levels.each do |level| %>
-      <% if level.circle %>
+    <% data.MemberLevels.each do |level| %>
+      <% if level['premium_member'] %>
         <div class="circle-box">
           <div class="circle-box-top">
-            <h3><%= level.name %></h3>
-            <h4>$<%= level.amount_annual_comma %> Annually</h4>
-            <p><em>Three-Year Commitment</em></p>
+            <h3><%= level['name'] %></h3>
+            <h4>$<%= level['donation_amount']%></h4>
           </div>
           <div class="circle-box-bottom">
-            <% if level.benefactor_plus %>
-              <h4>All Benefactor level benefits, plus:</h4>
-            <% else %>
-              <h4>All previous level benefits, plus:</h4>
-            <% end %>
+            <h4>Benefits:</h4>
             <div class="circle-box-benefits">
-            <% if level.extra_access_benefits %>
-              <% level.extra_access_benefits.each do |benefit| %>
-                <p><%= benefit %></p>
-              <% end %>
-            <% end %>
-            <% if level.extra_content_benefits %>
-              <% level.extra_content_benefits.each do |benefit| %>
-                <p><%= benefit %></p>
-              <% end %>
-            <% end %>
-            <% if level.extra_recognition_benefits %>
-              <% level.extra_recognition_benefits.each do |benefit| %>
-                <p><%= benefit %></p>
-              <% end %>
-            <% end %>
+              <p><%= level['benefits'] %></p>
             </div>
             <a href="https://givalike.org/public/quickgive.aspx?cid=231&amp;amount=<%= level.amount_annual %>"><button class="button button-flat">Join <i class="fa fa-chevron-right"></i></button></a>
             <a href="https://givalike.org/public/quickgive.aspx?cid=231&amp;amount=<%= level.amount_annual %>"><button style="float: right;" class="button button-flat">Renew <i class="fa fa-chevron-right"></i></button></a>
@@ -71,5 +52,5 @@ title: Circle Membership
   </div>
 </div>
 <div class="thanks outer-info">
-  <div class="inner-info"><hr>Thank you for supporting The Texas Tribune<hr></div>
+  <div class="inner-info"><hr>Thank you for supporting <%= data.AboutOrg[0]['org_name'] %><hr></div>
 </div>
