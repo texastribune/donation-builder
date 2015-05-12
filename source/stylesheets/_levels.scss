@@ -38,11 +38,15 @@
   border-bottom: 2px solid $gray-medium;
   td {
     padding: 1em 0;
-    @include span-columns(4);
+    @include span-columns(2);
     @include media($mobile) {
       @include span-columns(12);
     }
     &.name {
+      @include span-columns(6);
+      @include media($mobile) {
+        @include span-columns(12);
+      }
       p {
         color: $gray-medium;
       }
