@@ -6,8 +6,8 @@ title: Circle Membership
   <div class="splash-wrapper">
     <div class="splash-greeting">
       <h1 class="splash-header">Join Our Circle</h1>
-      <p class="splash-info"><%= data.info %></p>
-      <h4 class="splash-support"><%= data.support %></h4>
+      <p class="splash-info"><%= data.AboutOrg[0]['summary'] %></p>
+      <h4 class="splash-support"><%= data.AboutOrg[0]['cta'] %></h4>
     </div><!-- splash-greeting -->
     <% data.levels.each do |level| %>
       <% if level.circle %>
@@ -52,21 +52,19 @@ title: Circle Membership
 
 <div class="main">
   <div class="main-left">
-    <h2 class="tagline"><%= data.tagline %></h2>
+    <h2 class="tagline"><%= data.AboutOrg[0]['tagline'] %></h2>
     <%= partial "videos" %>
   </div>
   <div class="main-right">
     <h3 class="section-header">Have a Question?</h3>
-    <% data.contacts.each do |contact| %>
-      <% if contact.circle %>
-        <div class="contact-info">
-          <h5><%= contact.about %></h5>
-          <h4><%= contact.name %></h4>
-          <p class="italic"><%= contact.title %></p>
-          <p><%= contact.phone %></p>
-          <p><a href="mailto:<%=contact.email %>"><%= contact.email %> <i class="fa fa-chevron-right"></i></a></p>
-        </div>
-      <% end %>
+    <% data.Contacts.each do |row| %>
+      <div class="contact-info">
+        <h5><%= row['department'] %></h5>
+        <h4><%= row['name'] %></h4>
+        <p class="italic"><%= row['title'] %></p>
+        <p><%= row['phone'] %></p>
+        <p><a href="mailto:<%= row['email'] %>"><%= row['email'] %> <i class="fa fa-chevron-right"></i></a></p>
+      </div>
     <% end %>
     <hr>
     <%= partial "give_more" %>
