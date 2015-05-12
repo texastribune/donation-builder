@@ -1,0 +1,72 @@
+// General typography styles
+html {
+  font-family: $helvetica;
+  font-size: 14px;
+}
+
+// size if league gothic loads
+.wf-leaguegothic-i4-active {
+  h1 {
+    font-size: 9em;
+    @media (max-width: 870px) {
+      font-size: 8em;
+    }
+    @include media($tablet) {
+      font-size: 5em;
+    }
+  }
+}
+
+h1 {
+  font-size: 5em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin: 0 0 0.5em 0;
+}
+
+h3 {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+h5 {
+  color: $gray-medium;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0.2em 0;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: 0.9em;
+  margin: 0;
+}
+
+p {
+  font-size: 1em;
+  margin: 0;
+  &.italic {
+    font-style: italic;
+  }
+}
+
+a {
+  color: $theme-color-secondary;
+  text-decoration: none;
+}
+
+i.fa-chevron-right {
+  font-size: 0.8em;
+}

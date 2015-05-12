@@ -1,0 +1,246 @@
+// Splash banner
+.splash {
+  @include background-sizing;
+  @include media($mobile) {
+    background-image: none;
+  }
+}
+
+.splash-greeting {
+  @include span-columns(12);
+  padding: 1.5em;
+  text-align: center;
+  .splash-info {
+    padding: 1em 0;
+  }
+}
+
+.splash-header {
+  border-bottom: 3px solid $theme-color-main;
+  font-family: $league-gothic;
+  @include media($mobile) {
+    border-bottom: none;
+  }
+}
+
+.splash-support {
+  color: $theme-color-main;
+  font-weight: 400;
+}
+
+.splash-info, .splash-header {
+  color: white;
+  font-weight: 200;
+}
+
+.splash-info, .splash-support {
+  font-size: 1.2em;
+  @include hide-for-mobile;
+}
+
+
+// nonprofit nonpartisan tagline
+.tagline {
+  @include media($mobile) {
+    margin: 0.5em 2em 0.5em 0;
+  }
+}
+
+
+// Buttons
+.button {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.5em 1.8em;
+  text-align: center;
+  &:focus {
+    outline: none;
+  }
+}
+
+.button-flat, .button-flat a {
+  background-color: $theme-color-main;
+  border: none;
+  color: $black;
+  &:hover {
+    @include fast-transition(background-color);
+    background-color: $theme-color-secondary;
+    color: $white;
+  }
+}
+
+
+// General hr style
+hr {
+  border: 1px solid $gray-light;
+}
+
+
+// Info box
+// Used for thank you on circle and watch now for videos
+.outer-info {
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+  text-align: center;
+  .inner-info {
+    background-color: transparent;
+    border: 3px solid $white;
+    color: $white;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    outline: none;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    a {
+      color: $white;
+    }
+    hr {
+      border-top: 1px solid $white;
+      display: inline-block;
+      margin: 0 1em;
+      vertical-align: middle;
+      width: 50px;
+    }
+    &:hover {
+      @include medium-transition(background-color);
+      background-color: $theme-color-secondary;
+      border: none;
+    }
+  }
+}
+
+
+// For videos
+.outer-info {
+  &.video-wrapper {
+    margin-bottom: 1.5em;
+  }
+  &#video-top {
+    background-color: lighten($black, 20%);
+    background-image: url("../images/showcase-one.jpg");
+    background-size: cover;
+    height: 350px;
+    @include media($mobile) {
+      height: 200px;
+    }
+  }
+  &.secondary-video {
+    background-color: lighten($black, 20%);
+    background-size: cover;
+    height: 200px;
+  }
+}
+
+.outer-video-wrapper {
+  @include hide-for-mobile;
+}
+
+#video-two {
+  background-image: url("../images/showcase-two.jpg");
+}
+
+#video-three {
+  background-image: url("../images/showcase-three.jpg");
+}
+
+#video-four {
+  background-image: url("../images/showcase-four.jpg");
+}
+
+.watch-more {
+  text-align: center;
+  @include show-for-mobile;
+}
+
+.video-label {
+  background-color: $theme-color-main;
+  font-size: 1.2em; 
+  font-weight: bold;  
+  padding: 0.5em 1em;
+}
+
+
+// Give more cta
+.give-more {
+  padding: 1em 1em 3em 0;
+  h3 {
+    padding-bottom: 1em;
+  }
+  @include media($mobile) {
+    background-color: $black;
+    padding: 1em 1em 3em 1em;
+    text-align: center;
+    h3 {
+      color: $theme-color-main;
+      padding: 0.5em 0;
+    }
+    p {
+      color: $white;
+    }
+  }
+}
+
+
+// Benefit flag
+h5.benefit-flag {
+  background: $theme-color-main;
+  color: black;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 0.8em;
+  padding: 0.5em 1.2em 0.5em 0.5em;
+  i {
+    color: white;
+  }
+}
+
+
+// Social
+.social-wrapper {
+  margin-bottom: 3em;
+}
+
+.social {
+  color: $white;
+  margin: 0.5em 0.5em 0.5em 0;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.facebook {
+  background: #2b4185;
+}
+
+.twitter {
+  background: #4298ed;
+}
+
+.email {
+  background: $theme-color-main;
+}
+
+
+// Contact Info
+.contact-info {
+  margin: 2em 0;
+  @include media($mobile) {
+    margin: 2em 1em;
+  }
+  h5 {
+    padding: 0 0 1em 0;
+  }
+  h4, p {
+    padding: 0 0 0.2em 0;
+  }
+}
+
+.section-header {
+  margin: 1em 0;
+  @include media($mobile) {
+    margin: 2em 0 1em 0.5em;
+  }
+}
