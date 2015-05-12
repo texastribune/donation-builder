@@ -33,68 +33,21 @@ title: Become a Member
     <%= partial "share" %>
   </div><!-- main-left -->
   <div class="main-right">
-    <% data.levels.each do |level| %>
-      <% unless level.student %>
+    <% data.MemberLevels.each do |level| %>
         <div class="level">
-          <% if level.most_popular %>
+          <% if level['most_popular'] %>
             <h5 class="benefit-flag"><i class="fa fa-star"></i> Most Popular</h5>
           <% end %>
-          <% if level.circle %>
-            <h5 class="benefit-flag"><i class="fa fa-support"></i> Circle Membership</h5>
+          <% if level['premium_member'] %>
+            <h5 class="benefit-flag"><i class="fa fa-support"></i> Premium Membership</h5>
           <% end %>
-          <h3><%= level.name %></h3>
-          <h4 class="amount">
-            <% if level.amount_month %><a href="https://givalike.org/public/quickgive.aspx?cid=<% if level.circle %>231<% else %>227<% end %>&amp;amount=<%= level.amount_month %>&amp;monthly=1">$<%= level.amount_month %> Monthly</a> <span>or</span> <% end %><a href="https://givalike.org/public/quickgive.aspx?cid=<% if level.circle %>231<% else %>227<% end %>&amp;amount=<%= level.amount_annual %>"><% if level.amount_annual_comma %>$<%= level.amount_annual_comma %><% else %>$<%= level.amount_annual %><% end %> Annually</a></h4>
-          <% if level.commitment %>
-            <p class="italic">Three-Year Commitment</p>
-          <% end %>
-          <% if level.all_above %>
-            <h4 class="all-above">All the above, plus:</h4>
-            <!-- list extra benefits for level by category -->
-            <% if level.extra_content_benefits %>
-              <h5>Content Benefits</h5>
-              <% level.extra_content_benefits.each do |benefit| %>
-                <p><%= benefit %></p>
-              <% end %>
-            <% end %>
-            <% if level.extra_access_benefits %>
-              <h5>Access Benefits</h5>
-              <% level.extra_access_benefits.each do |benefit| %>
-                <p><%= benefit %></p>
-              <% end %>
-            <% end %>
-            <% if level.extra_recognition_benefits %>
-              <h5>Recognition Benefits</h5>
-              <% level.extra_recognition_benefits.each do |benefit| %>
-                <p><%= benefit %></p>
-              <% end %>
-            <% end %>
-          <% else %> <!-- if not level.all_above -->
-            <!-- list all benefits by category -->
-            <% if level.all_content_benefits %>
-              <h5>Content Benefits</h5>
-              <% level.all_content_benefits.each do |benefit| %>
-                <p><%= benefit %></p>
-              <% end %>
-            <% end %>
-            <% if level.all_access_benefits %>
-              <h5>Access Benefits</h5>
-              <% level.all_access_benefits.each do |benefit| %>
-                <p><%= benefit %></p>
-              <% end %>
-            <% end %>
-            <% if level.all_recognition_benefits %>
-              <h5>Recognition Benefits</h5>
-              <% level.all_recognition_benefits.each do |benefit| %>
-                <p><%= benefit %></p>
-              <% end %>
-            <% end %>
-          <% end %>
+          <h3><%= level['name'] %></h3>
+          <h4 class="amount"><a href="#">$<%= level['donation_amount']%></a></h4>
+          <h5>Benefits</h5>
+          <p><%= level['benefits'] %></p>
         </div>
         <hr>
-      <% end %>
     <% end %>
-    <%= partial "give_more" %>
   </div>
 </div><!-- main-right -->
 <!-- videos/contacts show below levels on mobile -->
