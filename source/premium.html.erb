@@ -1,5 +1,5 @@
 ---
-title: Circle Membership
+title: Premium Membership
 ---
 
 <div class="splash">
@@ -11,14 +11,14 @@ title: Circle Membership
     </div><!-- splash-greeting -->
     <% data.MemberLevels.each do |level| %>
       <% if level['premium_member'] %>
-        <div class="circle-box">
-          <div class="circle-box-top">
+        <div class="premium-box">
+          <div class="premium-box-top">
             <h3><%= level['name'] %></h3>
             <h4>$<%= level['donation_amount']%></h4>
           </div>
-          <div class="circle-box-bottom">
+          <div class="premium-box-bottom">
             <h4>Benefits:</h4>
-            <div class="circle-box-benefits">
+            <div class="premium-box-benefits">
               <p><%= level['benefits'] %></p>
             </div>
             <a href="https://givalike.org/public/quickgive.aspx?cid=231&amp;amount=<%= level.amount_annual %>"><button class="button button-flat">Join <i class="fa fa-chevron-right"></i></button></a>
@@ -29,7 +29,7 @@ title: Circle Membership
     <% end %>
   </div><!-- splash-wrapper -->
   <%= partial "desktop_nav" %>
-</div><!-- splash-circle -->
+</div><!-- splash-premium -->
 
 <div class="main">
   <div class="main-left">

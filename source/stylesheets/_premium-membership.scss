@@ -1,5 +1,5 @@
-// Circle member page
-.circle {
+// Premium member page
+.premium {
   .splash-wrapper {
     padding: 1em;
   }
@@ -14,7 +14,7 @@
   }
 }
 
-.circle-box {
+.premium-box {
   @include span-columns(4);
   @media (max-width: 855px) {
     margin-bottom: 2em;
@@ -27,7 +27,7 @@
   }
 }
 
-.circle-box-top {
+.premium-box-top {
   background-color: $black;
   padding: 1em 2.2em;
   text-align: center;
@@ -46,7 +46,7 @@
   }
 }
 
-.circle-box-bottom {
+.premium-box-bottom {
   background-color: $white;
   color: $black;
   padding: 1em;
@@ -68,7 +68,7 @@
   }
 }
 
-.circle-box-benefits {
+.premium-box-benefits {
   padding: 0 0 0.5em 0;
 }
 
