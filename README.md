@@ -1,4 +1,4 @@
-# donation-builder
+# Donation Builder
 
 ## Getting Started
 
