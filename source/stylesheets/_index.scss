@@ -26,6 +26,7 @@
     }
     .express-checkout {
       @include span-columns(4);
+      padding: 2.5em 0;
       @media (max-width: 840px) {
         @include span-columns(6);
       }

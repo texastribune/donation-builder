@@ -9,6 +9,9 @@
     background-color: $bg-contribute;
     padding: 2em;
     text-align: center;
+    .button-margin {
+      margin-top: 1em;
+    }
     @media (max-width: 620px) {
       background-color: transparent;
       padding-top: 0;
@@ -121,9 +124,6 @@
       @include span-columns(12);
     }
     .contribute {
-      .button-renew {
-        margin-top: 1em;
-      }
       background: transparent;
       .left-wrapper {
         float: left;
