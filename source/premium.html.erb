@@ -34,7 +34,11 @@ title: Premium Membership
 <div class="main">
   <div class="main-left">
     <h2 class="tagline"><%= data.AboutOrg[0]['tagline'] %></h2>
-    <%= partial "videos" %>
+    <% if data.Showcase[0]['content_type'] == 'videos' %>
+      <%= partial "videos" %>
+    <% elsif data.Showcase[0]['content_type'] == 'images' %>
+      <%= partial "images" %>
+    <% end %>
   </div>
   <div class="main-right">
     <h3 class="section-header">Have a Question?</h3>

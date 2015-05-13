@@ -120,7 +120,7 @@ hr {
 
 // For videos
 .outer-info {
-  &.video-wrapper {
+  &.showcase-wrapper {
     margin-bottom: 1.5em;
   }
   &#video-top {
@@ -132,14 +132,23 @@ hr {
       height: 200px;
     }
   }
-  &.secondary-video {
+  &#image-top {
+    background-color: lighten($black, 20%);
+    background-image: url("../images/image-one.png");
+    background-size: cover;
+    height: 350px;
+    @include media($mobile) {
+      height: 200px;
+    }
+  }
+  &.secondary-showcase {
     background-color: lighten($black, 20%);
     background-size: cover;
     height: 200px;
   }
 }
 
-.outer-video-wrapper {
+.outer-showcase-wrapper {
   @include hide-for-mobile;
 }
 
@@ -147,12 +156,24 @@ hr {
   background-image: url("../images/video-two.png");
 }
 
+#image-two {
+  background-image: url("../images/image-two.png");
+}
+
 #video-three {
   background-image: url("../images/video-three.png");
 }
 
+#image-three {
+  background-image: url("../images/image-three.png");
+}
+
 #video-four {
   background-image: url("../images/video-four.png");
+}
+
+#image-four {
+  background-image: url("../images/image-four.png");
 }
 
 .watch-more {
@@ -160,7 +181,7 @@ hr {
   @include show-for-mobile;
 }
 
-.video-label {
+.showcase-label {
   background-color: $theme-color-main;
   font-size: 1.2em; 
   font-weight: bold;  

@@ -17,7 +17,11 @@ title: Become a Member
 <div class="main">
   <div class="main-left">
     <h2><%= data.AboutOrg[0]['tagline'] %></h2>
-    <%= partial "videos" %>
+    <% if data.Showcase[0]['content_type'] == 'videos' %>
+      <%= partial "videos" %>
+    <% elsif data.Showcase[0]['content_type'] == 'images' %>
+      <%= partial "images" %>
+    <% end %>
     <hr>
     <h3 class="section-header">Have a Question?</h3>
       <% data.Contacts.each do |row| %>
@@ -53,7 +57,11 @@ title: Become a Member
 <!-- videos/contacts show below levels on mobile -->
 <div class="main-mobile">
   <h2 class="tagline"><%= data.AboutOrg[0]['tagline'] %></h2>
-  <%= partial "videos" %>
+  <% if data.Showcase[0]['content_type'] == 'videos' %>
+    <%= partial "videos" %>
+  <% elsif data.Showcase[0]['content_type'] == 'images' %>
+    <%= partial "images" %>
+  <% end %>
   <h3 class="section-header">Have a Question?</h3>
     <% data.Contacts.each do |row| %>
       <div class="contact-info">
