@@ -20,24 +20,4 @@ $(document).ready(function() {
       srcAction: 'iframe_src'
     }
   });
-
-
-  // For top express checkout
-
-  // Initialize top number input spinner for express checkout
-  // Uses jquery ui to make it look pretty
-  $("#spinner").spinner();
-
-  $('.ui-spinner').bind('keyup mouseup', function() {
-    $('#spinner').css("color", "#000000");
-    $('#spinner-bottom').css("color", "#000000");
-    var input_amount = $('#spinner').val();
-  });
-
-
-  // For bottom express checkout
-
-  // Initialize bottom number input spinner for express checkout
-  $("#spinner-bottom").spinner();
-
 });
