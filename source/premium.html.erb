@@ -21,8 +21,8 @@ title: Premium Membership
             <div class="premium-box-benefits">
               <p><%= level['benefits'] %></p>
             </div>
-            <a href="https://givalike.org/public/quickgive.aspx?cid=231&amp;amount=<%= level.amount_annual %>"><button class="button button-flat">Join <i class="fa fa-chevron-right"></i></button></a>
-            <a href="https://givalike.org/public/quickgive.aspx?cid=231&amp;amount=<%= level.amount_annual %>"><button style="float: right;" class="button button-flat">Renew <i class="fa fa-chevron-right"></i></button></a>
+            <a href="<%= data.DonationInfo[0]['generic_form_url'] %>"><button class="button button-flat">Join <i class="fa fa-chevron-right"></i></button></a>
+            <a href="<%= data.DonationInfo[0]['renew_form_url'] %>"><button style="float: right;" class="button button-flat">Renew <i class="fa fa-chevron-right"></i></button></a>
           </div>
         </div>
       <% end %>

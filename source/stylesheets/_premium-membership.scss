@@ -75,8 +75,7 @@
 
 .thanks {
   @include background-sizing;
-  background-color: lighten($black, 20%);
-  background-image: url("../images/thanks-footer.jpg");
+  background-color: $theme-color-main;
   height: 350px;
   .inner-info {
     @include media($mobile) {
