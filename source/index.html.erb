@@ -42,7 +42,7 @@ title: Become a Member
             <h5 class="benefit-flag"><i class="fa fa-support"></i> Premium Membership</h5>
           <% end %>
           <h3><%= level['name'] %></h3>
-          <h4 class="amount"><a href="#">$<%= level['donation_amount']%></a></h4>
+          <h4 class="amount"><a href="<%= data.DonationInfo[0]['generic_form_url'] %>">$<%= level['donation_amount']%></a></h4>
           <h5>Benefits</h5>
           <p><%= level['benefits'] %></p>
         </div>

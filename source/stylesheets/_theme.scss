@@ -125,7 +125,7 @@ hr {
   }
   &#video-top {
     background-color: lighten($black, 20%);
-    background-image: url("../images/showcase-one.jpg");
+    background-image: url("../images/video-one.png");
     background-size: cover;
     height: 350px;
     @include media($mobile) {
@@ -144,15 +144,15 @@ hr {
 }
 
 #video-two {
-  background-image: url("../images/showcase-two.jpg");
+  background-image: url("../images/video-two.png");
 }
 
 #video-three {
-  background-image: url("../images/showcase-three.jpg");
+  background-image: url("../images/video-three.png");
 }
 
 #video-four {
-  background-image: url("../images/showcase-four.jpg");
+  background-image: url("../images/video-four.png");
 }
 
 .watch-more {
