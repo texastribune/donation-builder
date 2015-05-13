@@ -1,11 +1,11 @@
 ---
-title: Explore Benefits
+title: <%= data.Pages[0]['level_page_title'] %>
 ---
 
 <div class="splash">
   <div class="splash-wrapper">
     <div class="splash-greeting">
-      <h1 class="splash-header"><%= data.AboutOrg[0]['level_page_title'] %></h1>
+      <h1 class="splash-header"><%= data.Pages[0]['level_page_header'] %></h1>
       <p class="splash-info"><%= data.AboutOrg[0]['summary'] %></p>
       <h4 class="splash-support"><%= data.AboutOrg[0]['cta'] %></h4>
     </div><!-- splash-greeting -->

@@ -1,8 +1,8 @@
 <nav class="nav mobile-nav">
   <ul>
-    <li><%= link_to 'Become a Member', '/index.html' %></li>
-    <li><%= link_to 'Explore Benefits', '/levels.html' %></li>
-    <li><%= link_to 'Premium Membership', '/premium.html' %></li>
+    <li><a href="/index.html"><%= data.Pages[0]['landing_title'] %></a></li>
+    <li><a href="/levels.html"><%= data.Pages[0]['level_page_title'] %></a></li>
+    <li><a href="/premium.html"><%= data.Pages[0]['premium_page_title'] %></a></li>
     <li><a href="<%= data.DonationInfo[0]['generic_form_url'] %>">Quick Donation</a></li>
   </ul>
 </nav>

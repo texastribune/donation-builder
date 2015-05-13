@@ -1,8 +1,8 @@
 <nav class="nav desktop-nav">
   <ul>
-    <li <% if current_page.data.title == 'Become a Member' %>class="active"<% end %>><%= link_to 'Become<br> a Member<i class="fa fa-caret-down"></i>', '/index.html' %></li>
-    <li <% if current_page.data.title == 'Explore Benefits' %>class="active"<% end %>><%= link_to 'Explore<br> Benefits<i class="fa fa-caret-down"></i>', '/levels.html' %></li>
-    <li <% if current_page.data.title == 'Premium Membership' %>class="active"<% end %>><%= link_to 'Premium<br> Membership<i class="fa fa-caret-down"></i>', '/premium.html' %></li>
-    <li><a href="<%= data.DonationInfo[0]['generic_form_url'] %>">Quick<br>Donation</a></li>
+    <li><a href="/index.html"><%= data.Pages[0]['landing_title'] %><i class="fa fa-caret-down"></i></a></li>
+    <li><a href="/levels.html"><%= data.Pages[0]['level_page_title'] %><i class="fa fa-caret-down"></i></a></li>
+    <li><a href="/premium.html"><%= data.Pages[0]['premium_page_title'] %><i class="fa fa-caret-down"></i></a></li>
+    <li><a href="<%= data.DonationInfo[0]['generic_form_url'] %>">Quick Donation</a></li>
   </ul>
 </nav>
