@@ -1,8 +1,8 @@
 <div class="top-checkout express-checkout">
   <div class="contribute">
     <form id="top-contribute" action="https://givalike.org/public/quickgive.aspx?cid=227" method="post">
-      <span class="dollar">$</span><input name="amount" value="9" min="3" max="5000" type="number" id="spinner">
-      <button type="submit" class="button button-flat">Contribute Now <i class="fa fa-chevron-right"></i></button>
+      <span class="dollar">$</span><input name="amount" value="<%= data.Checkout[0]['default_donation'] %>" min="<%= data.Checkout[0]['min_donation'] %>" max="<%= data.Checkout[0]['max_donation'] %>" type="number" id="spinner">
+      <button type="submit" class="button button-flat"><%= data.Checkout[0]['button_cta'] %> <i class="fa fa-chevron-right"></i></button>
     </form>
     <div class="button button-flat renew-button">
       <a href="https://givalike.org/public/quickgive.aspx?cid=227"><p><strong>Renew Today <i class="fa fa-chevron-right"></i></strong></p></a>
