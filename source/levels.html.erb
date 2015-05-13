@@ -29,8 +29,8 @@ title: Explore Benefits
           <% end %>
         </td>
         <td>$<%= level['donation_amount'] %></td>
-        <td><a href="#">Join</a></td>
-        <td><a href="#">Renew</a></td>
+        <td><a href="<%= data.DonationInfo[0]['generic_form_url'] %>">Join</a></td>
+        <td><a href="<%= data.DonationInfo[0]['renew_form_url'] %>">Renew</a></td>
       </tr>
       <tr class="popout">
         <td>

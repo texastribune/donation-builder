@@ -34,48 +34,10 @@ $(document).ready(function() {
     var input_amount = $('#spinner').val();
   });
 
- // When user submits a contribution
- // Pass appropriate querystring params to Givalike
- $('#top-contribute').submit(function(e) {
-
-    // Don't submit the form as is
-    e.preventDefault();
-
-    // Base Givalike url
-    var url = "https://givalike.org/public/quickgive.aspx?cid=";
-
-    // Grab contribution amount
-    var amount = $('#spinner').val();
-
-    $('#top-contribute').get(0).setAttribute('action', url);
-
-    // Go to Givalike
-    $(location).attr('href',url);
-  });
-
 
   // For bottom express checkout
 
   // Initialize bottom number input spinner for express checkout
   $("#spinner-bottom").spinner();
-
-  // When user submits a contribution
- // Pass appropriate querystring params to Givalike
- $('#contribution-form-bottom').submit(function(e) {
-
-    // Don't submit the form as is
-    e.preventDefault();
-
-    // Base Givalike url
-    var url = "https://givalike.org/public/quickgive.aspx?cid=227";
-
-    // Grab contribution amount
-    var amount = $('#spinner-bottom').val();
-
-    $('#contribution-form-bottom').get(0).setAttribute('action', url);
-
-    // Go to Givalike
-    $(location).attr('href',url);
-  });
 
 });

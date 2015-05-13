@@ -66,6 +66,11 @@
     @include fast-transition(background-color);
     background-color: $theme-color-secondary;
     color: $white;
+    a {
+      @include fast-transition(background-color);
+      background-color: $theme-color-secondary;
+      color: $white;
+    }
   }
 }
 
