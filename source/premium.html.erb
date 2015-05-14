@@ -1,5 +1,5 @@
 ---
-title: <%= data.Pages[0]['premium_page_title'] %>
+title: Premium Membership
 ---
 
 <div class="splash">
@@ -9,6 +9,13 @@ title: <%= data.Pages[0]['premium_page_title'] %>
       <p class="splash-info"><%= data.AboutOrg[0]['summary'] %></p>
       <h4 class="splash-support"><%= data.AboutOrg[0]['cta'] %></h4>
     </div><!-- splash-greeting -->
+  </div><!-- splash-wrapper -->
+  <%= partial "desktop_nav" %>
+</div><!-- splash-premium -->
+
+<div class="main">
+  <div class="main-left">
+    <h3 class="section-header"><%= data.Pages[0]['premium_page_header_secondary'] %></h3>
     <% data.MemberLevels.each do |level| %>
       <% if level['premium_member'] %>
         <div class="premium-box">
@@ -27,13 +34,7 @@ title: <%= data.Pages[0]['premium_page_title'] %>
         </div>
       <% end %>
     <% end %>
-  </div><!-- splash-wrapper -->
-  <%= partial "desktop_nav" %>
-</div><!-- splash-premium -->
-
-<div class="main">
-  <div class="main-left">
-    <h2 class="tagline"><%= data.AboutOrg[0]['tagline'] %></h2>
+    <h3 class="section-header"><%= data.Pages[0]['premium_page_content_header'] %></h3>
     <% if data.Showcase[0]['content_type'] == 'videos' %>
       <%= partial "videos" %>
     <% elsif data.Showcase[0]['content_type'] == 'images' %>
