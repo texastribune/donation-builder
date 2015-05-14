@@ -121,3 +121,8 @@ nav.mobile-nav {
   @include show-for-mobile;
   padding: 0 1em;
 }
+
+
+body.thanks {
+  background-color: white;
+}
