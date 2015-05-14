@@ -4,7 +4,7 @@
     padding: 1em;
   }
   .splash {
-    background-color: lighten($black, 25%);
+    background-color: $theme-color-tertiary;
     background-image: url("../images/premium-membership-banner.jpg");
   }
   .main {

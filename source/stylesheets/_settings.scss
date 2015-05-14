@@ -5,15 +5,16 @@ $mobile: new-breakpoint(max-width 520px);
 
 
 // Colors
-$theme-color-main: #a188dc;
-$theme-color-secondary: #5a4c7b;
-
 $black: #000000;
 $gray-medium: #aaaaaa;
 $gray-light: #ebebeb;
 $white: #ffffff;
 
-$bg-bottom-checkout: $theme-color-secondary;
+$theme-color-main: #a188dc;
+$theme-color-secondary: #5a4c7b;
+$theme-color-tertiary: $gray-medium;
+
+$bg-bottom-checkout: $theme-color-tertiary;
 
 $bg-contribute: white;
 $bg-nav: #000000;
@@ -42,11 +43,11 @@ $secondary-font: 'Open Sans Condensed', sans-serif;
 
 // for visually hiding but remaining accessible
 @mixin visually-hidden {
-  position: absolute; 
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height: 1px; width: 1px; 
-  margin: -1px; padding: 0; border: 0; 
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
 }
 
 @mixin background-sizing {
@@ -70,9 +71,9 @@ $secondary-font: 'Open Sans Condensed', sans-serif;
 
 // Helper classes
 .visually-hidden {
-  position: absolute; 
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height: 1px; width: 1px; 
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
   margin: -1px; padding: 0; border: 0;
 }
