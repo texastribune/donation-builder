@@ -6,13 +6,17 @@ Donation Builder is a framework to help organizations showcase their work and se
 
 ## Features
 
-* Framework ready to be customized with an organization's visual brand, including images, colors, and fonts
+* Fully responsive framework ready to be customized with an organization's visual brand, including images, colors, and fonts
 * Ability to load information from Google Spreadsheets, so that non-technical members of your team can update membership levels and benefits, contact information, organization information, social share messages, content to highlight, and more
 * Ready to easily set up with your Google Analytics account
 * Ability to hook up to a variety of payment processors, including Dwolla, Givalike, and DonorPerfect, to accept the donations
 * Ability to deploy through Amazon Web Services or Heroku
 
 ## Support
+
+* Chrome, Firefox, Safari, IE9+
+* Users with JavaScript disabled
+* Tested with [Browserstack](https://www.browserstack.com/) across a variety of devices
 
 ## Getting Started
 
@@ -42,6 +46,8 @@ When Middleman builds, it creates a static file for each file located in the sou
 
 ## Integrating with Google Drive
 
+## Analytics
+
 ## Visual Customization
 
 ## Content Customization
@@ -61,5 +67,9 @@ By default, in config.rb, config.after_build is set to false. Set this to true. 
 In your terminal, you should see s3_sync applying any updates to files for the project. You can also check the project s3 bucket to ensure that all files have been synced there. Change config.after_build back to its default of false after deploying.
 
 ### Heroku
+
+## Examples
+
+The Texas Tribune uses this project for our donations site. You can see it live [here](http://support.texastribune.org/) and visit the repo [here](https://github.com/texastribune/donations-app).
 
 ## Contributors
