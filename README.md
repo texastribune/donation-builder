@@ -54,7 +54,7 @@ The project is set up so that the site can be updated and customized through Goo
 
 You can hook up the project to your Google Analytics account to track how people are interacting with the site. In the Google Spreadsheet, you should have an Analytics tab. Here, there should be a column labeled 'google_analytics_id', and this is where you list your ID. There should also be a second column labeled 'google_analytics_domain', and this is where you should list your domain.
 
-![screenshot of Analytics tab](https://www.dropbox.com/s/jwi7u4vdls9wao9/Analytics_tab.png?dl=0)
+See [this screenshot](https://www.dropbox.com/s/jwi7u4vdls9wao9/Analytics_tab.png?dl=0).
 
 ## Visual Customization
 
@@ -80,9 +80,15 @@ You can customize the backgrounds used for the banners at the top of each page w
 
 ### Typography
 
+## Membership Levels
+
 ## Content Customization
 
+On both the landing page and the premium membership page, there are four spots provided for you to showcase either images or videos to communicate to people what their donations will go toward supporting. These can be set in the Showcase tab. See [this screenshot](https://www.dropbox.com/s/7av2y8xu5oaq8ea/Showcase_tab.png?dl=0).
+
 ## Social Sharing
+
+You can also customize the default messages for when people choose to email, tweet, or post to Facebook about donating to your organization. This can also be controlled from Google Spreadsheets in the Social tab. See [this screenshot](https://www.dropbox.com/s/8gjs5vksc7b0wmj/Social_tab.png?dl=0) of the tab. The Facebook fields set the [Opengraph](http://ogp.me/) metadata for your site, to ensure Facebook scrapes and displays the information you want when people post.
 
 ## Integrating with a Payment Processor
 
