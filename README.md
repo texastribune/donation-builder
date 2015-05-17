@@ -110,13 +110,23 @@ You can list the benefits for each membership level here. Between each benefit, 
 
 On both the landing page and the premium membership page, there are four spots provided for you to showcase either images or videos to communicate to people what their donations will go toward supporting. These can be set in the Showcase tab. See [this screenshot](https://www.dropbox.com/s/7av2y8xu5oaq8ea/Showcase_tab.png?dl=0).
 
+## Navigation Links
+
+## Footer Links
+
 ## Social Sharing
 
 You can also customize the default messages for when people choose to email, tweet, or post to Facebook about donating to your organization. This can also be controlled from Google Spreadsheets in the Social tab. See [this screenshot](https://www.dropbox.com/s/8gjs5vksc7b0wmj/Social_tab.png?dl=0) of the tab. The Facebook fields set the [Opengraph](http://ogp.me/) metadata for your site, to ensure Facebook scrapes and displays the information you want when people post.
 
+To set your Facebook share image, you also need to include the image you'd like to use there in the /source/images folder named facebook-share-image.png.
+
 ## Integrating with a Payment Processor
 
 The project is designed to be able to be integrated with the payment processor that works best for you. It's set up to integrate most fluidly through linking to a form where people can then enter their information and submit their contribution. Some examples of payment processors that it works well with include Givalike, Dwolla, and DonorPerfect.
+
+You can set up the links where people should be sent to fill out their information and submit their contribution in the DonationInfo tab. See [this screenshot](https://www.dropbox.com/s/jp72o6vhs9ubikj/DonationInfo_tab.png?dl=0). You can set different urls here for generic contributions and for renewals.
+
+### Possible Customizations
 
 ## Deploying
 
