@@ -23,16 +23,7 @@ title: Become a Member
       <%= partial "images" %>
     <% end %>
     <hr>
-    <h3 class="section-header">Have a Question?</h3>
-      <% data.Contacts.each do |row| %>
-        <div class="contact-info">
-          <h5><%= row['department'] %></h5>
-          <h4><%= row['name'] %></h4>
-          <p class="italic"><%= row['title'] %></p>
-          <p><%= row['phone'] %></p>
-          <p><a href="mailto:<%= row['email'] %>"><%= row['email'] %> <i class="fa fa-chevron-right"></i></a></p>
-        </div>
-      <% end %>
+    <%= partial "contacts" %>
     <hr>
     <%= partial "share" %>
   </div><!-- main-left -->
@@ -62,16 +53,7 @@ title: Become a Member
   <% elsif data.Showcase[0]['content_type'] == 'images' %>
     <%= partial "images" %>
   <% end %>
-  <h3 class="section-header">Have a Question?</h3>
-    <% data.Contacts.each do |row| %>
-      <div class="contact-info">
-        <h5><%= row['department'] %></h5>
-        <h4><%= row['name'] %></h4>
-        <p class="italic"><%= row['title'] %></p>
-        <p><%= row['phone'] %></p>
-        <p><a href="mailto:<%= row['email'] %>"><%= row['email'] %> <i class="fa fa-chevron-right"></i></a></p>
-      </div>
-    <% end %>
+  <%= partial "contacts" %>
   <hr>
   <%= partial "share" %>
 </div><!-- main-mobile -->
