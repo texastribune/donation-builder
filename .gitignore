@@ -21,4 +21,4 @@
 google_drive_cache/
 
 #Ignore google client secrets
-.google_client_secrets.json
+/client_secrets.json
