@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+	<title>Donation Builder</title>
+
+        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href=".">Donation Builder</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+
+            
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#about-the-project">About the Project</a></li>
+        
+            <li><a href="#why-we-built-it-this-way">Why We Built It this Way</a></li>
+        
+    
+        <li class="main "><a href="#features">Features</a></li>
+        
+    
+        <li class="main "><a href="#support">Support</a></li>
+        
+    
+        <li class="main "><a href="#getting-started">Getting Started</a></li>
+        
+    
+        <li class="main "><a href="#development">Development</a></li>
+        
+    
+        <li class="main "><a href="#integrating-with-google-drive">Integrating with Google Drive</a></li>
+        
+    
+        <li class="main "><a href="#analytics">Analytics</a></li>
+        
+    
+        <li class="main "><a href="#visual-customization">Visual Customization</a></li>
+        
+            <li><a href="#brand-colors">Brand Colors</a></li>
+        
+            <li><a href="#typography">Typography</a></li>
+        
+            <li><a href="#images">Images</a></li>
+        
+            <li><a href="#organization-info">Organization Info</a></li>
+        
+            <li><a href="#contact-information">Contact Information</a></li>
+        
+            <li><a href="#membership-levels">Membership Levels</a></li>
+        
+    
+        <li class="main "><a href="#customizing-content">Customizing Content</a></li>
+        
+    
+        <li class="main "><a href="#page-information">Page Information</a></li>
+        
+    
+        <li class="main "><a href="#navigation-links">Navigation Links</a></li>
+        
+    
+        <li class="main "><a href="#footer-links">Footer Links</a></li>
+        
+    
+        <li class="main "><a href="#social-sharing">Social Sharing</a></li>
+        
+    
+        <li class="main "><a href="#integrating-with-a-payment-processor">Integrating with a Payment Processor</a></li>
+        
+            <li><a href="#possible-customizations">Possible Customizations</a></li>
+        
+    
+        <li class="main "><a href="#deploying">Deploying</a></li>
+        
+            <li><a href="#amazon-web-services">Amazon Web Services</a></li>
+        
+            <li><a href="#heroku">Heroku</a></li>
+        
+            <li><a href="#rsync-ftp-sftp-and-git">Rsync, FTP, SFTP and Git</a></li>
+        
+    
+        <li class="main "><a href="#examples">Examples</a></li>
+        
+    
+        <li class="main "><a href="#contributors">Contributors</a></li>
+        
+    
+        <li class="main "><a href="#project-layout">Project layout</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="about-the-project">About the Project</h2>
+<p>Donation Builder is a framework to help organizations showcase their work and seek new members and support for funding their projects. The primary audience for this project is nonprofit organizations with small teams who want a better and quick-to-set-up way to inform potential new members and supporters about their mission and work, as well as easily lead them through the donation process.</p>
+<h3 id="why-we-built-it-this-way">Why We Built It this Way</h3>
+<p>We chose Middleman for the project because we wanted a mostly static site. The <a href="https://github.com/voxmedia/middleman-google_drive">Google Drive gem for Middleman</a> provides the ability to easily update the content on the site without touching the code once it's set up, for those elements that are dynamic.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Fully responsive framework ready to be customized with an organization's visual brand, including images, colors, and fonts</li>
+<li>Ability to load information from Google Spreadsheets, so that non-technical members of your team can update membership levels and benefits, contact information, organization information, social share messages, content to highlight, and more</li>
+<li>Easily integrated with your Google Analytics account</li>
+<li>Ability to hook up to a variety of payment processors, including Dwolla, Givalike, and DonorPerfect, to accept the donations</li>
+<li>Ability to deploy through Amazon Web Services or Heroku</li>
+</ul>
+<h2 id="support">Support</h2>
+<ul>
+<li>Chrome, Firefox, Safari, IE9+</li>
+<li>Users with JavaScript disabled</li>
+<li>Tested with <a href="https://www.browserstack.com/">Browserstack</a> across a variety of devices</li>
+</ul>
+<h2 id="getting-started">Getting Started</h2>
+<p>To get started, clone down the project repo.</p>
+<p>If you don't already have Ruby installed, you need to <a href="https://www.ruby-lang.org/en/documentation/installation/">install it</a>. You need Ruby version 2.1.4, which is specified in the .ruby-version file. One way to manage your Ruby versions is to use <a href="https://github.com/sstephenson/rbenv">rbenv</a>.</p>
+<p>You need the Ruby gem bundler. If you need to install the bundler, run:</p>
+<pre><code>gem install bundler
+</code></pre>
+<p>Install the necessary gems from the Gemfile by running:</p>
+<pre><code>bundle install
+</code></pre>
+<h2 id="development">Development</h2>
+<p>If you've never worked with Middleman before, you can check out the docs <a href="https://middlemanapp.com/basics/install/">here</a>.</p>
+<p>Middleman is configured to live reload the project in the browser as changes are made to files. To start up the Middleman server, run:</p>
+<pre><code>bundle exec middleman
+</code></pre>
+<p>To build the site, run:</p>
+<pre><code>bundle exec middleman build
+</code></pre>
+<p>When Middleman builds, it creates a static file for each file located in the source folder. The build process is configured in config.rb.</p>
+<h2 id="integrating-with-google-drive">Integrating with Google Drive</h2>
+<p>Donation Builder uses the <a href="https://github.com/voxmedia/middleman-google_drive">middleman-google_drive gem</a> to integrate with Google Drive. Configure your Google Docs authentication as detailed in the <a href="https://github.com/voxmedia/middleman-google_drive#setup">Setup section</a>.</p>
+<p>The project is set up so that the site can be updated and customized through Google Spreadsheets. Use the same setup for your Google Spreadsheets to correctly pull in the info. You can view the spreadsheet setup <a href="https://docs.google.com/spreadsheets/d/1GhhJ0nC35YAH21Dyt6U7tGBYqbP45CWdm1Ui1ReAfeE/pubhtml">here</a>.</p>
+<h2 id="analytics">Analytics</h2>
+<p>You can hook up the project to your Google Analytics account to track how people are interacting with the site. In the Google Spreadsheet, you should have an Analytics tab. Look for the column labeled 'google_analytics_id', and enter your Google Analytics ID here. A second column labeled 'google_analytics_domain'  is where you should enter your domain.</p>
+<p>See <a href="https://www.dropbox.com/s/jwi7u4vdls9wao9/Analytics_tab.png?dl=0">this screenshot</a>.</p>
+<h2 id="visual-customization">Visual Customization</h2>
+<h3 id="brand-colors">Brand Colors</h3>
+<p>Donation Builder uses Sass to write its styles. In _settings.scss, there are some color variables. The project uses three theme colors, a main theme color, a secondary theme color, and a tertiary theme color. These colors are then applied to the buttons, navigation links, labels, and other UI elements throughout the project to quickly and easily use your organization's colors.</p>
+<h3 id="typography">Typography</h3>
+<p>You can customize the site with the fonts your organization already uses. This can also be done in the _settings.scss file. Look for the variables $main-font and $secondary-font. The default main font is 'Roboto' with a sans-serif fallback; the default secondary font is 'Open Sans Condensed', which has another sans-serif font as a fallback.</p>
+<h3 id="images">Images</h3>
+<p>To switch out most images, you can replace an image in the /source/images folder that corresponds to the image you'd like to change. These images are named in an intuitive manner so that it's clear where each image appears in the project. The images and where they appear are described below in case the names are not clear. If you still aren't sure, try switching out the image and see where it appears in the project.</p>
+<h4 id="logo">Logo</h4>
+<p>Your organization's logo appears in the masthead of each page on the site. The logo should be approximately 300px wide and 60px tall. In the source/images/ folder is an image named logo.png. Replace this image with your logo.</p>
+<h4 id="favicon">Favicon</h4>
+<p>You may want to customize the favicon that appears on the browser tab. To do this, replace the image called favicon.ico with your favicon.</p>
+<h4 id="banner-backgrounds">Banner Backgrounds</h4>
+<p>You can customize the backgrounds used for the banners at the top of each page with your organization's photos. To set a background for the landing page banner, replace the photo named landing-header-bg.jpg. To set a background for the premium membership page banner, replace the photo named premium-membership-banner.jpg.</p>
+<h3 id="organization-info">Organization Info</h3>
+<p>In the AboutOrg tab of the Google Spreadsheet, you can set up the summary for your organization, a short tagline, a call-to-action, your organization's name, and the url for your organization.</p>
+<h3 id="contact-information">Contact Information</h3>
+<p>Contact information letting people know who to contact with questions can also be configured in the Google Spreadsheet, under the Contacts tab. You can set department, name, title, phone, and email for each contact.</p>
+<h3 id="membership-levels">Membership Levels</h3>
+<p>You can set up your organization's membership level names, donation amounts and benefits in the Google Spreadsheet. You do this on the MemberLevels tab. See <a href="https://www.dropbox.com/s/m80bmqczm5znty4/MemberLevels_tab.png?dl=0">this screenshot</a>.</p>
+<h4 id="name">name</h4>
+<p>This field is your membership level name. For example, "Activist" or "Enthusiast".</p>
+<h4 id="donation_amount">donation_amount</h4>
+<p>This is the donation amount that people should give to be at the membership level. Add the amounts without dollar signs. For amounts over 999, include the comma (for example, 1,000).</p>
+<h4 id="most_popular">most_popular</h4>
+<p>Set this to TRUE for your most popular membership level, and leave this field blank for all other levels. This activates a "Most Popular" flag when this level is displayed on the landing page and on the membership grid page.</p>
+<h4 id="premium_member">premium_member</h4>
+<p>Set this to TRUE for any premium membership levels that your organization offers. This activates a "Premium Member" flag when this level is displayed on the landing page and on the membership grid page. It also tells the project to feature these premium membership levels on the premium membership page.</p>
+<h4 id="benefits">benefits</h4>
+<p>You can list the benefits for each membership level here. Between each benefit, include &lt;br&gt; to put in a line break. You may also want to include "Plus all above benefits" as one of the benefits in this field.</p>
+<h2 id="customizing-content">Customizing Content</h2>
+<p>On both the landing page and the premium membership page, there are four spots provided for you to showcase either images or videos to inform people what their donations will go toward supporting. You set them in the Showcase tab. See <a href="https://www.dropbox.com/s/7av2y8xu5oaq8ea/Showcase_tab.png?dl=0">this screenshot</a>. To showcase images, enter 'images' in the 'content_type' column, and to showcase videos, enter 'videos' in the 'content_type' column.</p>
+<p>If you selected images, upload the images of your choice and name them "image-one.pg" (This is the top featured image), "image-two.png", "image-three.png", and "image-four.png". </p>
+<p>If you selected videos, upload the videos of your choice and name them "video-one.pg" (This is the top featured video), "video-two.png", "video-three.png", and "video-four.png". You'll also need to set the Youtube link for your videos in the Showcase tab under "video_one", "video_two", "video_three", and "video_four". </p>
+<p>Labels for the images or videos can be set in the spreadsheet with the columns "label_one", "label_two", "label_three", and "label_four".</p>
+<h2 id="page-information">Page Information</h2>
+<p>You can set your page titles, headers, and urls in the Pages tab of the Google Spreadsheet.</p>
+<h2 id="navigation-links">Navigation Links</h2>
+<p>You can add more navigation links to the navbar as needed. These links are included in both the desktop nav and the mobile nav. For example, you might want to add a "Quick Donation" link or a link to more information about your organization. Additional nav links can be set up in the NavLinks tab. For each additional nav link, add the URL target and the link text to display. It's recommended that you add only up to three additional nav links so you don't overwhelm the page.</p>
+<h2 id="footer-links">Footer Links</h2>
+<p>You can set up the links that should appear in the footer in the FooterLinks tab. For each link you'd like to include in the footer, add the URL and the link text to display. Note that the project is configured to hide the footer by default if the device width is 985px or greater. You can change this in the _footer.scss file if you prefer a different behavior here.</p>
+<h2 id="social-sharing">Social Sharing</h2>
+<p>You can customize the default messages for when people choose to email, tweet or post to Facebook about donating to your organization. You configure this in Google Spreadsheets on the Social tab. See <a href="https://www.dropbox.com/s/8gjs5vksc7b0wmj/Social_tab.png?dl=0">this screenshot</a>. The Facebook fields set the <a href="http://ogp.me/">Open Graph</a> metadata for your site, to ensure Facebook scrapes and displays the information you want when people post.</p>
+<p>To set your Facebook share image, you also need to include the image you'd like to use there in the /source/images folder named facebook-share-image.png.</p>
+<h2 id="integrating-with-a-payment-processor">Integrating with a Payment Processor</h2>
+<p>The project is designed to be able to be integrated with the payment processor that works best for you. It's set up to integrate most fluidly through linking to a form where people can then enter their information and submit their contribution. Some examples of payment processors with which it works well include Givalike, Dwolla and DonorPerfect.</p>
+<p>You can set up the links where people should be sent to enter their information and submit their contribution in the DonationInfo tab. See <a href="https://www.dropbox.com/s/jp72o6vhs9ubikj/DonationInfo_tab.png?dl=0">this screenshot</a>. You can set different URLs here for generic contributions and for renewals.</p>
+<h3 id="possible-customizations">Possible Customizations</h3>
+<p>Coming soon!</p>
+<h2 id="deploying">Deploying</h2>
+<h3 id="amazon-web-services">Amazon Web Services</h3>
+<p>To deploy to AWS, the project uses the middleman-s3_sync gem to push and compile the site to Amazon S3 after building.</p>
+<p>By default, in config.rb, config.after_build is set to false. Set this to true. Check that your AWS_ACCESS_KEY and AWS_ACCESS_SECRET environment variables are set, and then run:</p>
+<pre><code>bundle exec middleman build
+</code></pre>
+<p>In your terminal, you should see s3_sync applying any updates to the files in the project. You can also check the project S3 bucket to ensure that all files have been synced there. Change config.after_build back to its default of false after deploying.</p>
+<h3 id="heroku">Heroku</h3>
+<p>If you've never used Heroku before, you'll need to <a href="https://signup.heroku.com/dc">create a Heroku account</a>.</p>
+<p>Heroku deployment uses config.ru and the Rakefile. For Heroku, you'll need Ruby 2.1.4.</p>
+<p>To create your project for Heroku, run</p>
+<pre><code>heroku create
+</code></pre>
+<p>To push the project to Heroku, run</p>
+<pre><code>git push heroku master
+</code></pre>
+<h3 id="rsync-ftp-sftp-and-git">Rsync, FTP, SFTP and Git</h3>
+<p>You can use a <a href="https://github.com/middleman-contrib/middleman-deploy">middleman-deploy gem</a> to deploy the project over Rsync, FTP, SFTP or Git.</p>
+<h2 id="examples">Examples</h2>
+<p>The Texas Tribune uses this project for its donations site. You can see it live <a href="http://support.texastribune.org/">here</a> and visit the repo <a href="https://github.com/texastribune/donations-app">here</a>. This should give you a good idea of what's possible with the project and what additional customizations you can add to the project so that it fits your particular needs.</p>
+<h2 id="contributors">Contributors</h2>
+<ul>
+<li><a href="https://github.com/kabeaty">Kathryn Beaty</a> - <a href="mailto:kbeaty@texastribune.org">kbeaty@texastribune.org</a></li>
+</ul>
+<p>Thank you to <a href="http://builtbymasonry.com/">Masonry</a>, the digital creative agency we worked with to reach the design for this project.</p>
+<p>Please feel free to reach out with any questions or comments. Thanks!
+ve-reloading docs server.
+<em> <code>mkdocs build</code> - Build the documentation site.
+</em> <code>mkdocs help</code> - Print this help message.</p>
+<h2 id="project-layout">Project layout</h2>
+<pre><code>mkdocs.yml    # The configuration file.
+docs/
+    index.md  # The documentation homepage.
+    ...       # Other markdown pages, images and other files.
+</code></pre></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        
+
+        <script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
+        <script src="./js/base.js"></script>
+
+        <!--
+        MkDocs version  : 0.12.2
+        Docs Build Date : 2015-05-17 23:38:27.322856
+        -->
+    </body>
+</html>
