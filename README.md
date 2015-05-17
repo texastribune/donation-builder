@@ -150,6 +150,18 @@ In your terminal, you should see s3_sync applying any updates to files for the p
 
 ### Heroku
 
+If you've never used Heroku before, you'll need to [create a Heroku account](https://signup.heroku.com/dc).
+
+Heroku deployment uses config.ru and the Rakefile. For Heroku, you'll need Ruby 2.1.4.
+
+To create your project for Heroku, run
+
+    heroku create
+
+To push the project to Heroku, run
+
+    git push heroku master
+
 ### Rsync, FTP, STFP, or Git
 
 There's a [middleman-deploy gem](https://github.com/middleman-contrib/middleman-deploy) that can be used to deploy the project over Rsync, FTP, STFP, or Git.
@@ -161,5 +173,7 @@ The Texas Tribune uses this project for our donations site. You can see it live 
 ## Contributors
 
 * [Kathryn Beaty](https://github.com/kabeaty) - [kbeaty@texastribune.org](mailto:kbeaty@texastribune.org)
+
+Thank you to [Masonry](http://builtbymasonry.com/), the digital creative agency we worked with to reach the design for this project.
 
 Please feel free to reach out with any questions or comments. Thanks!
