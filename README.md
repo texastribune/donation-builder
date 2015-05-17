@@ -86,6 +86,10 @@ You may want to customize the favicon that appears on the browser tab. To do thi
 
 You can customize the backgrounds used for the banners at the top of each page with your organization's photos. To set a background for the landing page banner, replace the photo named landing-header-bg.jpg. To set a background for the premium membership page banner, replace the photo named premium-membership-banner.jpg.
 
+### Organization Info
+
+In the AboutOrg tab of the Google Spreadsheet, you can set up the summary for your organization, a short tagline, a call-to-action, your organization's name, and the url for your organization.
+
 ### Membership Levels
 
 You can set up your organization's membership level names, donation amounts and benefits in the Google Spreadsheet. You do this on the MemberLevels tab. See [this screenshot](https://www.dropbox.com/s/m80bmqczm5znty4/MemberLevels_tab.png?dl=0).
@@ -112,7 +116,13 @@ You can list the benefits for each membership level here. Between each benefit, 
 
 ## Customizing Content 
 
-On both the landing page and the premium membership page, there are four spots provided for you to showcase either images or videos to inform people what their donations will go toward supporting. You set them in the Showcase tab. See [this screenshot](https://www.dropbox.com/s/7av2y8xu5oaq8ea/Showcase_tab.png?dl=0).
+On both the landing page and the premium membership page, there are four spots provided for you to showcase either images or videos to inform people what their donations will go toward supporting. You set them in the Showcase tab. See [this screenshot](https://www.dropbox.com/s/7av2y8xu5oaq8ea/Showcase_tab.png?dl=0). To showcase images, enter 'images' in the 'content_type' column, and to showcase videos, enter 'videos' in the 'content_type' column.
+
+If you selected images, upload the images of your choice and name them "image-one.pg" (This is the top featured image), "image-two.png", "image-three.png", and "image-four.png". 
+
+If you selected videos, upload the videos of your choice and name them "video-one.pg" (This is the top featured video), "video-two.png", "video-three.png", and "video-four.png". You'll also need to set the Youtube link for your videos in the Showcase tab under "video_one", "video_two", "video_three", and "video_four". 
+
+Labels for the images or videos can be set in the spreadsheet with the columns "label_one", "label_two", "label_three", and "label_four".
 
 ## Navigation Links
 
