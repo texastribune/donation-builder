@@ -1,10 +1,16 @@
 # Donation Builder
 
+## About the Project
+
+## Features
+
+## Support
+
 ## Getting Started
 
 To get started, clone down the project repo.
 
-If you don't already have Ruby installed, you'll need to [install it](https://www.ruby-lang.org/en/documentation/installation/).
+If you don't already have Ruby installed, you'll need to [install it](https://www.ruby-lang.org/en/documentation/installation/). The version of Ruby you'll need is 2.1.0, which is specified in the .ruby-version file.
 
 You'll need the Ruby gem bundler. If you need to install the bundler, run:
 
@@ -16,7 +22,7 @@ Install the necessary gems from the Gemfile by running:
 
 ## Development
 
-Middleman is configured to live reload as changes are made to files. To start up the Middleman server, run:
+Middleman is configured to live reload the project in the browser as changes are made to files. To start up the Middleman server, run:
 
     bundle exec middleman
 
@@ -25,6 +31,14 @@ To build the site, run:
     bundle exec middleman build
 
 When Middleman builds, it creates a static file for each file located in the source folder. The build process is configured in config.rb.
+
+## Integrating with Google Drive
+
+## Visual Customization
+
+## Content Customization
+
+## Integrating with a Payment Processor
 
 ## Deploying
 
@@ -37,3 +51,7 @@ By default, in config.rb, config.after_build is set to false. Set this to true. 
     bundle exec middleman build
 
 In your terminal, you should see s3_sync applying any updates to files for the project. You can also check the project s3 bucket to ensure that all files have been synced there. Change config.after_build back to its default of false after deploying.
+
+### Heroku
+
+## Contributors
