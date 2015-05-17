@@ -2,6 +2,8 @@
 
 ## About the Project
 
+Donation Builder is a framework to help organizations showcase their work and seek new members and support for funding their projects. The primary audience for this project is nonprofit organizations with small teams who want a better way that's quick to set up to inform potential new members and supporters about their mission and work, as well as easily lead them through the donation process.
+
 ## Features
 
 ## Support
