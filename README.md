@@ -130,6 +130,10 @@ If you selected videos, upload the videos of your choice and name them "video-on
 
 Labels for the images or videos can be set in the spreadsheet with the columns "label_one", "label_two", "label_three", and "label_four".
 
+## Page Information
+
+You can set your page titles, headers, and urls in the Pages tab of the Google Spreadsheet.
+
 ## Navigation Links
 
 You can add more navigation links to the navbar as needed. These links are included in both the desktop nav and the mobile nav. For example, you might want to add a "Quick Donation" link or a link to more information about your organization. Additional nav links can be set up in the NavLinks tab. For each additional nav link, add the URL target and the link text to display. It's recommended that you add only up to three additional nav links so you don't overwhelm the page.
