@@ -82,9 +82,29 @@ You'll also probably want to customize the favicon that's seen on the browser ta
 
 You can customize the backgrounds used for the banners at the top of each page with your organization's photos. To set a background for the landing page banner, replace the photo named landing-header-bg.jpg. To set a background for the premium membership page banner, replace the photo named premium-membership-banner.jpg.
 
-## Membership Levels
+### Membership Levels
 
 Your organization's membership level names, donation amounts, and benefits can be set up in the Google Spreadsheet as well. This can be done in the MemberLevels tab. See [this screenshot](https://www.dropbox.com/s/m80bmqczm5znty4/MemberLevels_tab.png?dl=0).
+
+#### name
+
+This field is your membership level name. For example, "Activist" or "Enthusiast".
+
+#### donation_amount
+
+This is the donation amount that people should give to be at the membership level. Add the amounts without dollar signs. For amounts over 999, include the comma (i.e. 1,000).
+
+#### most_popular
+
+Set this to TRUE for your most popular membership level, and leave this field blank for all other levels. This will activate a "Most Popular" flag when this level is displayed on the landing page and on the membership grid page.
+
+#### premium_member
+
+Set this to TRUE for any premium membership levels that your organization offers. This will activate a "Premium Member" flag when this level is displayed on the landing page and on the membership grid page. It also tells the project to feature these premium membership levels on the premium member page.
+
+#### benefits
+
+You can list the benefits for each membership level here. Between each benefit, include <br> to signal a line break. You may also want to include "Plus all above benefits" as one of the benefits in this field.
 
 ## Content Customization
 
