@@ -26,7 +26,7 @@ We chose Middleman for the project because we wanted a mostly static site. The [
 
 To get started, clone down the project repo.
 
-If you don't already have Ruby installed, you'll need to [install it](https://www.ruby-lang.org/en/documentation/installation/). The version of Ruby you'll need is 2.1.0, which is specified in the .ruby-version file.
+If you don't already have Ruby installed, you'll need to [install it](https://www.ruby-lang.org/en/documentation/installation/). The version of Ruby you'll need is 2.1.4, which is specified in the .ruby-version file.
 
 You'll need the Ruby gem bundler. If you need to install the bundler, run:
 
