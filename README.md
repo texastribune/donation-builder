@@ -46,6 +46,10 @@ When Middleman builds, it creates a static file for each file located in the sou
 
 ## Integrating with Google Drive
 
+Donation Builder uses the [middleman-google_drive gem](https://github.com/voxmedia/middleman-google_drive) to integrate with Google Drive. You'll want to head over there and be sure to configure your Google Docs authentication as detailed in the Setup section.
+
+The project is set up so that the site can be updated and customized through Google Spreadsheets. You'll want to use the same setup for your Google Spreadsheets to correctly pull in the info. You can view the spreadsheet setup [here](https://docs.google.com/spreadsheets/d/1GhhJ0nC35YAH21Dyt6U7tGBYqbP45CWdm1Ui1ReAfeE/pubhtml).
+
 ## Analytics
 
 ## Visual Customization
