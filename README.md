@@ -84,6 +84,8 @@ You can customize the backgrounds used for the banners at the top of each page w
 
 ## Membership Levels
 
+Your organization's membership level names, donation amounts, and benefits can be set up in the Google Spreadsheet as well. This can be done in the MemberLevels tab. See [this screenshot](https://www.dropbox.com/s/m80bmqczm5znty4/MemberLevels_tab.png?dl=0).
+
 ## Content Customization
 
 On both the landing page and the premium membership page, there are four spots provided for you to showcase either images or videos to communicate to people what their donations will go toward supporting. These can be set in the Showcase tab. See [this screenshot](https://www.dropbox.com/s/7av2y8xu5oaq8ea/Showcase_tab.png?dl=0).
