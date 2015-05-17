@@ -58,6 +58,18 @@ You can hook up the project to your Google Analytics account to track how people
 
 ## Visual Customization
 
+### Brand colors
+
+Donation Builder uses Sass to write its styles. In _settings.scss, you'll see some color variables. The project uses three theme colors, a main theme color, a secondary theme color, and a tertiary theme color. These colors are then applied to the buttons, navigation links, labels, and more throughout the project to quickly get it set up with your organization's colors.
+
+### Images
+
+#### Logo
+
+Your organization's logo will appear in the masthead of each page on the site. You'll want this logo to be approximately 300px wide and 60px tall. In the source/images/ folder, you'll see an image named logo.png. Simply replace this image with your logo, and your logo will appear in the masthead.
+
+### Typography
+
 ## Content Customization
 
 ## Integrating with a Payment Processor
@@ -78,6 +90,6 @@ In your terminal, you should see s3_sync applying any updates to files for the p
 
 ## Examples
 
-The Texas Tribune uses this project for our donations site. You can see it live [here](http://support.texastribune.org/) and visit the repo [here](https://github.com/texastribune/donations-app).
+The Texas Tribune uses this project for our donations site. You can see it live [here](http://support.texastribune.org/) and visit the repo [here](https://github.com/texastribune/donations-app). This should hopefully provide a good idea of what's possible with the project and what additional customizations you can add to the project so that it fits your particular needs.
 
 ## Contributors
