@@ -164,7 +164,9 @@ Coming soon!
 
 To deploy to AWS, the project uses the middleman-s3_sync gem to push and compile the site to Amazon S3 after building.
 
-By default, in config.rb, config.after_build is set to false. Set this to true. Check that your AWS_ACCESS_KEY and AWS_ACCESS_SECRET environment variables are set, and then run:
+In the config.rb file, look for "activate :s3_sync do |config|". Set config.bucket to your AWS bucket. Set config.region to your AWS bucket region. Set your AWS_ACCESS_KEY and your AWS_ACCESS_SECRET as environment variables.
+
+By default, in config.rb, config.after_build is set to false. When you're ready to deploy, set this to true. Check that your AWS_ACCESS_KEY and AWS_ACCESS_SECRET environment variables are set, and then run:
 
     bundle exec middleman build
 

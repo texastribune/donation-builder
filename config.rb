@@ -41,14 +41,14 @@ end
 set :build_dir, 'tmp'
 
 # Amazon Web Services deployment
-# activate :s3_sync do |config|
-#   config.bucket = ''
-#   config.region = ''
-#   config.aws_access_key_id =
-#   config.aws_secret_access_key =
-#   # Set this to true to deploy to s3
-#   config.after_build = false
-# end
+activate :s3_sync do |config|
+  config.bucket = ''
+  config.region = ''
+  config.aws_access_key_id = ENV['AWS_ACCESS_KEY']
+  config.aws_secret_access_key = ENV['AWS_ACCESS_SECRET']
+  # Set this to true to deploy to s3
+  config.after_build = false
+end
 
 # add default caching policy to all files
 # default_caching_policy max_age:(60 * 60 * 24 * 365)
