@@ -121,3 +121,5 @@ There's a [middleman-deploy gem](https://github.com/middleman-contrib/middleman-
 The Texas Tribune uses this project for our donations site. You can see it live [here](http://support.texastribune.org/) and visit the repo [here](https://github.com/texastribune/donations-app). This should hopefully provide a good idea of what's possible with the project and what additional customizations you can add to the project so that it fits your particular needs.
 
 ## Contributors
+
+* [Kathryn Beaty](https://github.com/kabeaty), [kbeaty@texastribune.org](mailto:kbeaty@texastribune.org)
