@@ -4,6 +4,10 @@
 
 Donation Builder is a framework to help organizations showcase their work and seek new members and support for funding their projects. The primary audience for this project is nonprofit organizations with small teams who want a better and quick-to-setup way to inform potential new members and supporters about their mission and work, as well as easily lead them through the donation process.
 
+### Why we built it this way
+
+We chose Middleman for the project because we wanted a mostly static site. The [Google Drive gem for Middleman](https://github.com/voxmedia/middleman-google_drive) provides the ability to easily update the content on the site without touching the code once it's set up, for those elements that are dynamic.
+
 ## Features
 
 * Fully responsive framework ready to be customized with an organization's visual brand, including images, colors, and fonts
@@ -156,4 +160,6 @@ The Texas Tribune uses this project for our donations site. You can see it live 
 
 ## Contributors
 
-* [Kathryn Beaty](https://github.com/kabeaty), [kbeaty@texastribune.org](mailto:kbeaty@texastribune.org)
+* [Kathryn Beaty](https://github.com/kabeaty) - [kbeaty@texastribune.org](mailto:kbeaty@texastribune.org)
+
+Please feel free to reach out with any questions or comments. Thanks!
