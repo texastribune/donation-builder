@@ -64,13 +64,25 @@ Donation Builder uses Sass to write its styles. In _settings.scss, you'll see so
 
 ### Images
 
+To switch out most images, you can replace an image in the /source/images folder that corresponds with the image you'd like to change. Attempts were made to name these images in an intuitive manner so that it's clear where each image will be seen. The images and where they will appear is also detailed below in case any images are not clear. If you still aren't sure, try switching out the image and see where it appears in the project.
+
 #### Logo
 
-Your organization's logo will appear in the masthead of each page on the site. You'll want this logo to be approximately 300px wide and 60px tall. In the source/images/ folder, you'll see an image named logo.png. Simply replace this image with your logo, and your logo will appear in the masthead.
+Your organization's logo will appear in the masthead of each page on the site. You'll want this logo to be approximately 300px wide and 60px tall. In the source/images/ folder, you'll see an image named logo.png. Replace this image with your logo, and your logo will appear in the masthead.
+
+#### Favicon
+
+You'll also probably want to customize the favicon that's seen on the browser tab. To do this, replace the image called favicon.ico with your favicon.
+
+#### Banner Backgrounds
+
+You can customize the backgrounds used for the banners at the top of each page with your organization's photos. To set a background for the landing page banner, replace the photo named landing-header-bg.jpg. To set a background for the premium membership page banner, replace the photo named premium-membership-banner.jpg.
 
 ### Typography
 
 ## Content Customization
+
+## Social Sharing
 
 ## Integrating with a Payment Processor
 
