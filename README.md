@@ -96,6 +96,8 @@ You can also customize the default messages for when people choose to email, twe
 
 ## Integrating with a Payment Processor
 
+The project is designed to be able to be integrated with the payment processor that works best for you. It's set up to integrate most fluidly through linking to a form where people can then enter their information and submit their contribution. Some examples of payment processors that it works well with include Givalike, Dwolla, and DonorPerfect.
+
 ## Deploying
 
 ### Amazon Web Services
@@ -109,6 +111,10 @@ By default, in config.rb, config.after_build is set to false. Set this to true. 
 In your terminal, you should see s3_sync applying any updates to files for the project. You can also check the project s3 bucket to ensure that all files have been synced there. Change config.after_build back to its default of false after deploying.
 
 ### Heroku
+
+### Rsync, FTP, STFP, or Git
+
+There's a [middleman-deploy gem](https://github.com/middleman-contrib/middleman-deploy) that can be used to deploy the project over Rsync, FTP, STFP, or Git.
 
 ## Examples
 
