@@ -23,3 +23,5 @@ gem "middleman-s3_sync", "~> 3.0.43"
 
 # for image compression
 gem 'middleman-imageoptim', "~> 0.2.0"
+
+gem 'rack-contrib'

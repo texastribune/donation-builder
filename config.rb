@@ -37,7 +37,10 @@ activate :imageoptim do |options|
   options.svgo = false
 end
 
-# For s3 sync for deploying with middleman build
+# Heroku deployment
+set :build_dir, 'tmp'
+
+# Amazon Web Services deployment
 # activate :s3_sync do |config|
 #   config.bucket = ''
 #   config.region = ''
