@@ -2,9 +2,15 @@
 
 ## About the Project
 
-Donation Builder is a framework to help organizations showcase their work and seek new members and support for funding their projects. The primary audience for this project is nonprofit organizations with small teams who want a better way that's quick to set up to inform potential new members and supporters about their mission and work, as well as easily lead them through the donation process.
+Donation Builder is a framework to help organizations showcase their work and seek new members and support for funding their projects. The primary audience for this project is nonprofit organizations with small teams who want a better and quick-to-setup way to inform potential new members and supporters about their mission and work, as well as easily lead them through the donation process.
 
 ## Features
+
+* Framework ready to be customized with an organization's visual brand, including images, colors, and fonts
+* Ability to load information from Google Spreadsheets, so that non-technical members of your team can update membership levels and benefits, contact information, organization information, social share messages, content to highlight, and more
+* Ready to easily set up with your Google Analytics account
+* Ability to hook up to a variety of payment processors, including Dwolla, Givalike, and DonorPerfect, to accept the donations
+* Ability to deploy through Amazon Web Services or Heroku
 
 ## Support
 
