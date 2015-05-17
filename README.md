@@ -26,7 +26,7 @@ We chose Middleman for the project because we wanted a mostly static site. The [
 
 To get started, clone down the project repo.
 
-If you don't already have Ruby installed, you need to [install it](https://www.ruby-lang.org/en/documentation/installation/). You need Ruby version 2.1.0, which is specified in the .ruby-version file.
+If you don't already have Ruby installed, you need to [install it](https://www.ruby-lang.org/en/documentation/installation/). You need Ruby version 2.1.4, which is specified in the .ruby-version file.
 
 You need the Ruby gem bundler. If you need to install the bundler, run:
 
@@ -37,6 +37,8 @@ Install the necessary gems from the Gemfile by running:
     bundle install
 
 ## Development
+
+If you've never worked with Middleman before, you can check out the docs [here](https://middlemanapp.com/basics/install/).
 
 Middleman is configured to live reload the project in the browser as changes are made to files. To start up the Middleman server, run:
 
@@ -89,6 +91,10 @@ You can customize the backgrounds used for the banners at the top of each page w
 ### Organization Info
 
 In the AboutOrg tab of the Google Spreadsheet, you can set up the summary for your organization, a short tagline, a call-to-action, your organization's name, and the url for your organization.
+
+### Contact Information
+
+Contact information letting people know who to contact with questions can also be configured in the Google Spreadsheet, under the Contacts tab. You can set department, name, title, phone, and email for each contact.
 
 ### Membership Levels
 
