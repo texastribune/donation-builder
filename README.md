@@ -52,6 +52,10 @@ The project is set up so that the site can be updated and customized through Goo
 
 ## Analytics
 
+You can hook up the project to your Google Analytics account to track how people are interacting with the site. In the Google Spreadsheet, you should have an Analytics tab. Here, there should be a column labeled 'google_analytics_id', and this is where you list your ID. There should also be a second column labeled 'google_analytics_domain', and this is where you should list your domain.
+
+![screenshot of Analytics tab](https://www.dropbox.com/s/jwi7u4vdls9wao9/Analytics_tab.png?dl=0)
+
 ## Visual Customization
 
 ## Content Customization
