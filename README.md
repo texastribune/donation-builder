@@ -112,7 +112,11 @@ On both the landing page and the premium membership page, there are four spots p
 
 ## Navigation Links
 
+You can add more navigation links to the navbar as needed. These links will be included in both the desktop nav and the mobile nav. For example, you might want to add a "Quick Donation" link or a link to more information about your organization. Additional nav links can be set up in the NavLinks tab. Include the url the link should go to and the text that should appear for each url you'd like to add to the nav. It's recommended that you add only up to three additional navigation links so as not to overwhelm the page.
+
 ## Footer Links
+
+You can set up the links that should appear in the footer in the FooterLinks tab. For each link you'd like to include in the footer, add the url and the text that should appear. Note that the project is configured to hide the footer by default at a device width of 985px. You can change this in the _footer.scss file if you prefer a different behavior here.
 
 ## Social Sharing
 
