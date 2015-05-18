@@ -36,6 +36,9 @@ activate :imageoptim do |options|
   options.svgo = false
 end
 
+# Heroku deployment
+set :build_dir, 'build'
+
 # Amazon Web Services deployment
 activate :s3_sync do |config|
   config.bucket = ''
