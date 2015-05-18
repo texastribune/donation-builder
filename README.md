@@ -1,6 +1,6 @@
 # Donation Builder
 
-## You can also read the Donation Builder docs [here](http://donation-builder.readthedocs.org/en/latest/).
+You can also read the Donation Builder docs [here](http://donation-builder.readthedocs.org/en/latest/).
 
 ## About the Project
 
