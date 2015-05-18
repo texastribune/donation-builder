@@ -37,7 +37,7 @@ activate :imageoptim do |options|
 end
 
 # Heroku deployment
-set :build_dir, 'build'
+set :build_dir, 'tmp'
 
 # Amazon Web Services deployment
 activate :s3_sync do |config|
