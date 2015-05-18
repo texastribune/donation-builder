@@ -180,11 +180,17 @@ If you've never used Heroku before, you'll need to [create a Heroku account](htt
 
 Heroku deployment uses config.ru and the Rakefile. For Heroku, you'll need Ruby 2.1.4.
 
-To create your project for Heroku, run
+The first time you deploy, create your project for Heroku:
 
     heroku create
 
-To push the project to Heroku, run
+Build the project:
+
+    bundle exec middleman build
+
+Heroku is set up in config.rb to use the tmp directory.
+
+Push the project to Heroku:
 
     git push heroku master
 
