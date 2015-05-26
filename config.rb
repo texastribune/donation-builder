@@ -1,11 +1,12 @@
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
-  activate :google_drive, load_sheets: ENV['GOOGLE_DRIVE_KEY']
 end
 
 # Activate extension for Bourbon Sass mixins
 activate :bourbon
+
+activate :google_drive, load_sheets: ENV['GOOGLE_DRIVE_KEY']
 
 set :css_dir, 'stylesheets'
 
