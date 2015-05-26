@@ -1,17 +1,9 @@
+require 'rack'
 require 'rack/contrib/try_static'
 
-use Rack::Deflater
-use Rack::TryStatic, :root => "build", :urls => %w[/], :try => ['.html', 'index.html', '/index.html']
-
-FIVE_MINUTES=300
-
-run lambda { |env|
-  [
-    404,
-    {
-      'Content-Type'  => 'text/html',
-      'Cache-Control' => "public, max-age=#{FIVE_MINUTES}"
-    },
-    ['File not found']
-  ]
-}
+use ::Rack::TryStatic,
+  :root => "build",     # where middleman files are generated
+  :urls => %w[/]          # match all requests
+  :try => ['.html', 'index.html', '/index.html'] # try these postfixes sequentially
+# 404
+run lambda { [404, {'Content-Type' => 'text/plain'}, [' File not found.']]}
