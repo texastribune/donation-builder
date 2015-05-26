@@ -1,0 +1,60 @@
+---
+title: Explore Benefits
+---
+
+<div class="splash">
+  <div class="splash-wrapper">
+    <div class="splash-greeting">
+      <h1 class="splash-header"><%= data.Pages[0]['level_page_header'] %></h1>
+      <p class="splash-info"><%= data.AboutOrg[0]['summary'] %></p>
+      <h4 class="splash-support"><%= data.AboutOrg[0]['cta'] %></h4>
+    </div><!-- splash-greeting -->
+  </div><!-- splash-wrapper -->
+  <%= partial "desktop_nav" %>
+</div><!-- splash-levels -->
+
+<div class="main">
+  <h2 class="tagline"><%= data.AboutOrg[0]['tagline'] %></h2>
+  <h3>Explore the benefits:</h3>
+  <table>
+    <% data.MemberLevels.each do |level| %>
+    <tbody class="grid-body <% if level['most_popular'] %>opened<% end %>">
+      <tr>
+        <td class="name open-close">
+          <i class="fa fa-plus-square-o"></i>
+          <i class="fa fa-minus-square"></i>
+          <h3> <%= level['name'] %></h3>
+          <% if level['most_popular'] %>
+            <h5 class="benefit-flag"><i class="fa fa-star"></i> Most Popular</h5>
+          <% end %>
+        </td>
+        <td>$<%= level['donation_amount'] %></td>
+        <td><a href="<%= data.DonationInfo[0]['generic_form_url'] %>">Join</a></td>
+        <td><a href="<%= data.DonationInfo[0]['renew_form_url'] %>">Renew</a></td>
+      </tr>
+      <tr class="popout">
+        <td>
+          <h5>Benefits</h5>
+          <p><%= level['benefits'] %></p>
+        </td>
+      </tr>
+    </tbody>
+    <% end %>
+  </table>
+  <%= partial "share" %>
+</div>
+<%= partial "bottom_checkout" %>
+
+<script>
+  // visually hide popout elements on load
+  (function() {
+    $('.popout').addClass('visually-hidden');
+    $('.opened').find('.popout').toggleClass('visually-hidden');
+  })();
+
+  // toggles benefit info in grid
+  $('.open-close').on('click', function() {
+    $(this).closest('.grid-body').toggleClass('opened');
+    $(this).closest('.grid-body').find('.popout').toggleClass('visually-hidden');
+  });
+</script>

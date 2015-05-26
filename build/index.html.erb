@@ -1,0 +1,60 @@
+---
+title: Become a Member
+---
+
+<div class="splash">
+  <div class="splash-wrapper">
+    <div class="splash-greeting">
+      <h1 class="splash-header"><%= data.Pages[0]['landing_header'] %></h1>
+      <p class="splash-info"><%= data.AboutOrg[0]['summary'] %></p>
+      <h4 class="splash-support"><%= data.AboutOrg[0]['cta'] %></h4>
+    </div>
+    <%= partial "top_checkout" %>
+  </div><!-- splash-wrapper -->
+  <%= partial "desktop_nav" %>
+</div><!-- splash-landing -->
+
+<div class="main">
+  <div class="main-left">
+    <h2><%= data.AboutOrg[0]['tagline'] %></h2>
+    <% if data.Showcase[0]['content_type'] == 'videos' %>
+      <%= partial "videos" %>
+    <% elsif data.Showcase[0]['content_type'] == 'images' %>
+      <%= partial "images" %>
+    <% end %>
+    <hr>
+    <%= partial "contacts" %>
+    <hr>
+    <%= partial "share" %>
+  </div><!-- main-left -->
+  <div class="main-right">
+    <% data.MemberLevels.each do |level| %>
+        <div class="level">
+          <% if level['most_popular'] %>
+            <h5 class="benefit-flag"><i class="fa fa-star"></i> Most Popular</h5>
+          <% end %>
+          <% if level['premium_member'] %>
+            <h5 class="benefit-flag"><i class="fa fa-support"></i> Premium Membership</h5>
+          <% end %>
+          <h3><%= level['name'] %></h3>
+          <h4 class="amount"><a href="<%= data.DonationInfo[0]['generic_form_url'] %>">$<%= level['donation_amount']%></a></h4>
+          <h5>Benefits</h5>
+          <p><%= level['benefits'] %></p>
+        </div>
+        <hr>
+    <% end %>
+  </div>
+</div><!-- main-right -->
+<!-- videos/contacts show below levels on mobile -->
+<div class="main-mobile">
+  <h2 class="tagline"><%= data.AboutOrg[0]['tagline'] %></h2>
+  <% if data.Showcase[0]['content_type'] == 'videos' %>
+    <%= partial "videos" %>
+  <% elsif data.Showcase[0]['content_type'] == 'images' %>
+    <%= partial "images" %>
+  <% end %>
+  <%= partial "contacts" %>
+  <hr>
+  <%= partial "share" %>
+</div><!-- main-mobile -->
+<%= partial "bottom_checkout" %>

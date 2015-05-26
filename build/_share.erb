@@ -1,0 +1,18 @@
+<div class="social-wrapper">
+  <h3 class="section-header">Ready to share?</h3>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=<%= data.Social[0]['fb_url'] %>" target="_blank">
+    <div class="button social facebook">
+      <i class="fa fa-facebook"></i> Share on Facebook
+    </div>
+  </a>
+  <a href="http://twitter.com/share?text=<%= data.Social[0]['twitter_content'] %>" target="_blank">
+  <div class="button social twitter">
+    <i class="fa fa-twitter"></i> Tweet to your followers
+  </div>
+  </a>
+  <a href="mailto:?&amp;subject=<%= data.Social[0]['email_subject'] %>&amp;body=<%= data.Social[0]['email_body'] %>" target="_blank">
+    <div class="button social email">
+      <i class="fa fa-envelope"></i> Email to your friends
+    </div>
+  </a>
+</div>

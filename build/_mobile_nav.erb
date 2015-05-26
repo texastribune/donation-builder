@@ -1,0 +1,10 @@
+<nav class="nav mobile-nav">
+  <ul>
+    <li><a href="<%= data.Pages[0]['landing_url'] %>"><%= data.Pages[0]['landing_title'] %></a></li>
+    <li><a href="<%= data.Pages[0]['level_page_url'] %>"><%= data.Pages[0]['level_page_title'] %></a></li>
+    <li><a href="<%= data.Pages[0]['premium_page_url'] %>"><%= data.Pages[0]['premium_page_title'] %></a></li>
+    <% data.NavLinks.each do |link| %>
+      <li><a href="<%= link['url'] %>"><%= link['text'] %></a></li>
+    <% end %>
+  </ul>
+</nav>
