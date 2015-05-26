@@ -1,0 +1,14 @@
+<footer class="footer">
+  <nav class="left-nav">
+    <ul>
+      <li class="copyright">&copy; 2015 <a href="<%= data.AboutOrg[0]['org_url'] %>"><%= data.AboutOrg[0]['org_name'] %></a></li>
+    </ul>
+  </nav>
+  <nav class="right-nav">
+    <ul>
+      <% data.FooterLinks.each do |link| %>
+        <li><a href="<%= link['url'] %>"><%= link['text'] %></a></li>
+      <% end %>
+    </ul>
+  </nav>
+</footer>

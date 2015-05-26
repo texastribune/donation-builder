@@ -24,7 +24,7 @@ configure :build do
   activate :minify_javascript
 
   # Enable cache buster asset hashing of files
-  activate :asset_hash
+  # activate :asset_hash
 end
 
 # Gzip files
@@ -37,7 +37,7 @@ activate :imageoptim do |options|
 end
 
 # Heroku deployment
-set :build_dir, 'tmp'
+set :build_dir, 'build'
 
 # Amazon Web Services deployment
 activate :s3_sync do |config|
