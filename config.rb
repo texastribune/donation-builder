@@ -1,11 +1,12 @@
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
-  activate :google_drive, load_sheets: ENV['GOOGLE_DRIVE_KEY']
 end
 
 # Activate extension for Bourbon Sass mixins
 activate :bourbon
+
+activate :google_drive, load_sheets: ENV['GOOGLE_DRIVE_KEY']
 
 set :css_dir, 'stylesheets'
 
@@ -24,7 +25,7 @@ configure :build do
   activate :minify_javascript
 
   # Enable cache buster asset hashing of files
-  activate :asset_hash
+  # activate :asset_hash
 end
 
 # Gzip files
@@ -35,9 +36,6 @@ activate :imageoptim do |options|
   options.pngout = false
   options.svgo = false
 end
-
-# Heroku deployment
-set :build_dir, 'tmp'
 
 # Amazon Web Services deployment
 activate :s3_sync do |config|
