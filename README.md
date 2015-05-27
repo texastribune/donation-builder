@@ -184,7 +184,7 @@ The first time you deploy, create your project for Heroku:
 
     heroku create
 
-Build the project:
+Build the project locally and commit the updates:
 
     bundle exec middleman build
 
@@ -194,6 +194,10 @@ Push the project to Heroku:
 
     git push heroku master
 
+To see your deployed project:
+
+    heroku open
+
 ### Rsync, FTP, SFTP and Git
 
 You can use a [middleman-deploy gem](https://github.com/middleman-contrib/middleman-deploy) to deploy the project over Rsync, FTP, SFTP or Git.
@@ -201,6 +205,8 @@ You can use a [middleman-deploy gem](https://github.com/middleman-contrib/middle
 ## Examples
 
 The Texas Tribune uses this project for its donations site. You can see it live [here](http://support.texastribune.org/) and visit the repo [here](https://github.com/texastribune/donations-app). This should give you a good idea of what's possible with the project and what additional customizations you can add to the project so that it fits your particular needs.
+
+Look at the example project on Heroku [here](https://donation-builder.herokuapp.com/).
 
 ## Contributors
 
