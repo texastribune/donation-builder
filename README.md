@@ -178,7 +178,7 @@ In your terminal, you should see s3_sync applying any updates to the files in th
 
 If you've never used Heroku before, you'll need to [create a Heroku account](https://signup.heroku.com/dc).
 
-Heroku deployment uses config.ru and the Rakefile. For Heroku, you'll need Ruby 2.1.4.
+For Heroku, you'll need Ruby 2.1.4.
 
 The first time you deploy, create your project for Heroku:
 
